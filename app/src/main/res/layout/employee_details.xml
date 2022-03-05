@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="20px"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="tvName"
+        app:layout_constraintEnd_toEndOf="@+id/ivImg"
+        app:layout_constraintStart_toStartOf="@+id/ivImg"
+        app:layout_constraintTop_toBottomOf="@+id/ivImg" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="tvUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="tvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Address"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvStreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="tvStreet"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvSuite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="tvSuite"
+        app:layout_constraintTop_toBottomOf="@+id/tvStreet"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="tvCity"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuite"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvZipCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="tvZipCode"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvGeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Geo location"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvZipCode"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="latitude"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvLong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="tvLong"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvLat"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="tvPhone"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvLong"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="website"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvCompanyDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Company Details"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvWebsite"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="comp name"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompanyDetails"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvCatchPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="catch"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompanyName"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvBs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="bs"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatchPhrase"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
